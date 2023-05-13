@@ -30,6 +30,8 @@ const Feed = () => {
       setPosts(data);
     };
 
+    console.log(posts);
+
     fetchPosts();
   }, []);
 
@@ -42,7 +44,7 @@ const Feed = () => {
           value={searchText}
           onChange={handleSearchChange}
           required
-          className="saerch_input peer"
+          className="search_input peer"
         />
       </form>
 
